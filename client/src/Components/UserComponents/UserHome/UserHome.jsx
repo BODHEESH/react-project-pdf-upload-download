@@ -12,7 +12,7 @@ function UserHome({change}) {
     console.log(user)
     const token = localStorage.getItem('usertoken')
     console.log(token)
-
+    console.log(user._id,"user idddddddddddddddddd");
 
     useEffect(()=>{
         const fetchpdf = async () =>{
@@ -23,6 +23,22 @@ function UserHome({change}) {
         fetchpdf();
     
       },[change])
+
+      console.log(pdfData,"pdf data printing");
+     let userId=user._id;
+     console.log(userId,"ooooooooooooooooooooo");
+      const deleteData = async (id) => {
+          try {
+            alert(id)
+  
+        const response=  await axios.delete(`http://localhost:5000/delete/${id}`, {userId})
+            alert("successfyllly delete")
+            console.log(response ,"response response response");
+  
+        } catch (err) {
+        console.log(err);
+      }
+    }
 
     
     return (
@@ -53,7 +69,7 @@ function UserHome({change}) {
                                         <p className="flex justify-around m-5">
                                          
                                             <i className="text-2xl "><GrDownload/></i>
-                                            <i className="text-2xl"><RiDeleteBinLine/></i>
+                                            <i className="text-2xl" onClick={() => { deleteData(obj._id) }}><RiDeleteBinLine/></i>
                                         </p>
                                 </td>
                                 {/* <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
