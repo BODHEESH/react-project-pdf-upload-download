@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "pdfgalleryapi",
+    "private_key_id": "6c9faffb31a2e99914af05e50bbe8934e6cedc8f",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCdyjWoy32zv6fh\nQod4qRizAr54oYC5KAFEcPRS0GXkOUH0/E5XXOCg0DYWLTmh41uUeCyOOoiTgp3q\nG6Ycyh6Fte/CyIsCWONIyfNtfFv9xSdb1tdgHXOoi2/G7Rx79YT/cEhdFMlQ0052\nbHUp1CPTxWnxGUdhzYwMSc3I+bOSsDBEony+Wpm3LL0w/Ad6i/UlcJcYCKGQuFlf\nv5fL+SqtvaAuqGIs/YpwsuSO3Jm4WlV2wnXeN7JyKHh4z95fagmzex77KpN6FYmB\nbaTpUWWuDCkq8YJWWSO8OGIYbgO9lz+3Fl969GvT0bxlyx+DU1wrQAwxgiwdulb/\n+2AeBRTzAgMBAAECggEAK9DHVsBu/vd08EXPpY9bJvZXmtrKCmBT/cPZ7Jcm/Bl0\nOcnIHVVSoQVAR6c2TkB6oT8/rB0P6NpH7IbR+UOc9yc+1Vln1HaHYqKFoLz8NHtH\nQybk9rEm+UIC/3u/QaK7VE1DIunPP0z2CEd0v3FDo545nXQWENAJmC30YV8JYO1x\nOcSP9yWRTid2l9Rk20gCdo3XbzBhyoVJJlsMY1J9e5mSUPEasR4thCUouxuzAOKt\n1X7GUi5KSmVtvyRrIaIq6GZWAHNxcLwKtj0QsB9M8ObTi9uepZ8WfbgB7lGZRqSq\nw8m97sbIg6k9rAXkGtdsoizRqvt/JQFXXkfgNxTIrQKBgQDRl47TxazZXN6zNXIp\nfbEhOxXxpUqLkrZiwC7vZZvFK8YXaMbFRvcjraonNbIPcNwcZ9NBItcrHT7xIt4K\nnIbouNE3O+U8hU7nwRRR6Anq2OhqyL03hjehf/MeclQZpz+MEkZn64e3TkO5jLPU\nT9kR+nolb02hLH6XPlKGTlq0xwKBgQDAulEhRS6gstxGYe7fj44sOk6iFfOXIvQs\n22O+xLNSMTpjqe5c4hLwujRe14Dz5p4RVJYJiiBpRlQeu1hPJJ04yWlPgILkSvN/\n5Rv/8XX/sYSad70YOzwEPwjmdryl8yz3mkFCotWM1tZ8tSCpH7EhdwK+aPJ9Kd/v\nVjKWvWnadQKBgQCuK5EAQQvTkY5rRCW7fvz8TXp91crt05yG0YfvXvOkVS0HdQWB\nGOj1GDMG5GM026e+XzU5src119bfUgdMsCiYKkWJ7dcghPM+OcAmFHpxU5FIc8px\n4rJGHeqtyXpD2y0+vE0PvLWKSZqUDe2+qCAOBaUNiMHtBumny52OiHxuLwKBgGeH\nbq+Fn1+Z1TRFxXD4h7IAfF8blafZkftKuxEuTvnXEfuZvD7O/ser7xgHgfEDMGQ0\n4Qgs1+5VZjjAANc63u4zW8vmR+nkzVslst3RUsbREF999OlAYKQTTG+o1vv6Xmx/\nw5DNMhQfEEcbcXkIWjmU2bd5XtGXngDOeAx7oZJFAoGAVMykUc26XPZ1aj9g39R6\nco4Ar1ehF0MLW/SVr/KuFsoGiUasuv8KF8KhMSSeEYXk56h7Nna8/rMKdjYoj6eZ\ndeAgWpskQkFK0hgvcnNDz7VWG406ZmnkQy1ZWhqHepqABUWpfGW430bfHMzjG85+\nQShcaSt+Us5RhqqG+WdmmB8=\n-----END PRIVATE KEY-----\n",
+    "client_email": "pdfgallery@pdfgalleryapi.iam.gserviceaccount.com",
+    "client_id": "106090874259828983965",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pdfgallery%40pdfgalleryapi.iam.gserviceaccount.com"
+  }
+  
+

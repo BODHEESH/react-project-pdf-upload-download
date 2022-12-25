@@ -1,0 +1,25 @@
+/* When the browser is at least 600px and above */
+@media screen and (max-width: 600px) {
+    .searchbox {
+        width: 130px !important;
+    }
+
+  }
+@media screen and (max-width: 600px) {
+    .pdfGallery {
+   display:none;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .LogoutButton {
+   display:none;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .logoutIcon {
+   display:block !important;
+    }
+  }
+
+
+
