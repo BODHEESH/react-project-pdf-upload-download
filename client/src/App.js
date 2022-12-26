@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import HomeProtect from "./Auth/HomeProtect";
 import LoginProtect from "./Auth/LoginProtect";
+import UploadedfilesAdmin from "./Components/AdminComponents/UploadedfilesAdmin/UploadedfilesAdmin";
 import LandingPage from "./Components/UserComponents/LandingPage/LandingPage";
 import Navbar from "./Components/UserComponents/Navbar/Navbar";
 import AdminDashboardPage from "./Pages/AdminPages/AdminDashboardPage";
@@ -29,6 +30,7 @@ const App = () => {
 
         <Route path="/adminlogin" element={<AdminLogin />}></Route>
         <Route path="/admindashboard" element={<AdminDashboardPage />}></Route>
+        <Route path="/adminfiles/:id" element={<UploadedfilesAdmin />}></Route>
       </Routes>
     </>
   );

@@ -40,8 +40,6 @@ function UploadPDF() {
     }
   }
 
-console.log(uploaded);
-
   return (
     <>
     <div className="flex justify-center text-center bg-slate-100">

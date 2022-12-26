@@ -10,13 +10,10 @@ function AdminNavbar() {
   const navigate = useNavigate()
 
   const logout =()=>{
-      // localStorage.removeItem("usertoken")
-      // localStorage.removeItem("user")
+      // localStorage.removeItem("admintoken")
+      // localStorage.removeItem("admin")
       navigate("/adminlogin")
   }
-
-
-
   return (
     <div>
        

@@ -16,8 +16,6 @@ function Navbar() {
 
     const user = useSelector((state) => state.user)
 
-    console.log(user)
-
     const logout =()=>{
         localStorage.removeItem("usertoken")
         localStorage.removeItem("user")
@@ -33,14 +31,14 @@ function Navbar() {
             setSearchModal(false)
           }
           const search = e.target.value
-          const file = await axios.put(`http://localhost:5000/search/file`, { search ,user})
-          setfileFound(file.data)
+          userId=user._id
+          const file = await axios.put(`http://localhost:5000/search`, { search ,userId})
+          console.log(file.data);
+          setfileFound(file.data,"adadaad")
         } catch (error) {
-          console.log(error);
         }
     
       }
-    console.log(fileFound,"file found loggggg");
 
     return (
         <>
@@ -60,22 +58,6 @@ function Navbar() {
                                     className="searchbox block w-96 px-4 py-2 text-purple-700 bg-white border rounded-full focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                                     placeholder="Search using file name..." onChange={handleSearch}
                                 />
-                                <button className="px-4 text-blue-600 bg-gray-100 rounded-full ">
-                                    <svg
-                                        xmlns=""
-                                        className="w-5 h-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        strokeWidth={2}
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                        />
-                                    </svg>
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -96,9 +78,7 @@ function Navbar() {
                 {fileFound.map((u) => (
                   <div className="flex">
                     <div className="p-4 flex  items-center">
-                      {/* <Link to={`/profile/${u.fileName}`}>
-                        
-                      </Link> */}
+                     
                       <h1>{u.fileName}</h1>
                       
                     </div>

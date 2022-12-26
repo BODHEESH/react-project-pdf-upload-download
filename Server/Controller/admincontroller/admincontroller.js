@@ -54,6 +54,23 @@ const getUserDetails = async (req, res) => {
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/*                             user uploaded files                            */
+/* -------------------------------------------------------------------------- */
+
+const adminfilesDashboard = async (req, res) => {
+  try {
+    const currentUser = await User.find();
+    console.log(currentUser,"admin user");
+    let arrayCopy = [...currentUser.files];
+    if (arrayCopy) {
+      return res.json({ state: true, arrayCopy, msg: "uploaded files !" });
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 
 
 
@@ -63,5 +80,6 @@ const getUserDetails = async (req, res) => {
 
 module.exports = {
   adminLogin,
-  getUserDetails
+  getUserDetails,
+  adminfilesDashboard
 };

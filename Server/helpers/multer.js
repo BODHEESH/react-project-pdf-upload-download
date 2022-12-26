@@ -4,6 +4,9 @@ var {google} = require('googleapis')
 var GoogleDriveStorage = require("multer-google-drive")
 
 
+/* -------------------------------------------------------------------------- */
+/*              storage change to google drive under development              */
+/* -------------------------------------------------------------------------- */
 
 
 //   "google_api_folder_id": "1q3x5zt9yE_LLG_pQXpJ7Mr_NSX_hrA-X"

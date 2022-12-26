@@ -5,42 +5,36 @@ import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios';
 import { useState } from 'react';
 
-function UserHome({change}) {
+function UserHome({ change }) {
+    
     const user = useSelector((state) => state.user)
-    const [pdfData,setPdfdata] = useState([])
-
-    console.log(user)
+    const [pdfData, setPdfdata] = useState([])
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     const token = localStorage.getItem('usertoken')
-    console.log(token)
-    console.log(user._id,"user idddddddddddddddddd");
 
-    useEffect(()=>{
-        const fetchpdf = async () =>{
-          const response = await axios.get(`http://localhost:5000/uplodedfiles/user-dashboard/${user._id}`)
-        setPdfdata(response.data.arrayCopy)
+    useEffect(() => {
+        const fetchpdf = async () => {
+            const response = await axios.get(`http://localhost:5000/uplodedfiles/user-dashboard/${user._id}`)
+            setPdfdata(response.data.arrayCopy)
 
         }
         fetchpdf();
-    
-      },[change])
 
-      console.log(pdfData,"pdf data printing");
-     let userId=user._id;
-     console.log(userId,"ooooooooooooooooooooo");
-      const deleteData = async (id) => {
-          try {
+    }, [change])
+
+    let userId = user._id;
+    const deleteData = async (id) => {
+        try {
             alert(id)
-  
-        const response=  await axios.delete(`http://localhost:5000/delete/${id}`, {userId})
+
+            const response = await axios.delete(`http://localhost:5000/delete/${id}`,{userId})
             alert("successfyllly delete")
-            console.log(response ,"response response response");
-  
         } catch (err) {
-        console.log(err);
-      }
+            console.log(err);
+        }
     }
 
-    
+
     return (
         <div>
             <div className="overflow-y-hidden rounded-lg border mx-3">
@@ -54,42 +48,36 @@ function UserHome({change}) {
                             </tr>
                         </thead>
                         <tbody className="text-gray-500">
-                        {pdfData.map((obj) => {
-                            return (
-                            <tr className='text-center'>
-                                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
-                                    <p className="whitespace-no-wrap font-semibold ">{obj.fileName}</p>
-                                </td>
+                            {pdfData.map((obj) => {
+                                return (
+                                    <tr className='text-center'>
+                                        <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
+                                            <p className="whitespace-no-wrap font-semibold ">{(obj.fileName.substring(0,20))}</p>
+                                        </td>
 
-                                {/* <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
-                                    <p className="whitespace-no-wrap">02/10/1783</p>
-                                </td> */}
+                                        <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
+                                            <p className="flex justify-around m-5">
+                                                <a
+                                                    className="text-blue-400  p-4 font-mono"
+                                                    href={PF + obj.fileName}
+                                                    download
+                                                >
+                                                    {" "}
+                                                    <i className="text-2xl "><GrDownload /></i>
+                                                </a>
 
-                                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
-                                        <p className="flex justify-around m-5">
-                                         
-                                            <i className="text-2xl "><GrDownload/></i>
-                                            <i className="text-2xl" onClick={() => { deleteData(obj._id) }}><RiDeleteBinLine/></i>
-                                        </p>
-                                </td>
-                                {/* <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
-                                    <p className="whitespace-no-wrap">date</p>
-                                </td>
+                                                <i className="text-2xl" onClick={() => { deleteData(obj._id) }}><RiDeleteBinLine /></i>
+                                            </p>
+                                        </td>
+                                       
 
-                                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
-                                    <button className='border-2 border-purple-900 p-2 px-4 rounded text-purple-900 uppercase hover:shadow hover:bg-green-500  hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0'>Click here</button>
-                                </td>
-
-                                <td className="border-b border-gray-200 bg-white px-5 py-5 text-sm">
-                                    <button className='py-2 px-4 bg-transparent text-red-600 font-semibold border border-red-600 rounded hover:bg-red-600 hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0'>Delete</button>
-                                </td> */}
-
-                            </tr>
-                            )})}
+                                    </tr>
+                                )
+                            })}
                         </tbody>
-                       
-                        
-                       
+
+
+
 
 
 
