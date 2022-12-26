@@ -1,4 +1,4 @@
-PDG Gallery
+PDF Gallery
 
 a pdf store to upload aand download your files
 
@@ -14,8 +14,7 @@ Technologies used :
 
 Features involved:
 
- username and password login 
-
+    username and password login 
     Login with otp
     Form validations
     jwt tockens enabled
@@ -26,8 +25,12 @@ Features involved:
     API end points to update user details with jwt auth
     Simple and functional archetecture
 
-Future Updations :
+next week Updations to be implemented :
+
 One tap google auth
+pagination
+user block/unblock
+manage users
 login with facebook
 
     Admin side Ui:
@@ -35,6 +38,7 @@ login with facebook
     user list
     one click download of files 
     Admin side api end points to block and unblock users
+    <!-- --------------------------------------------------------------------- -->
 
 How to Start
 
