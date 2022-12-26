@@ -25,13 +25,13 @@ Features involved:
     API end points to update user details with jwt auth
     Simple and functional archetecture
 
-next week Updations to be implemented :
+next week Updations to be implemented:
 
-One tap google auth
-pagination
-user block/unblock
-manage users
-login with facebook
+    One tap google auth
+    pagination
+    user block/unblock
+    manage users
+    login with facebook
 
     Admin side Ui:
 
