@@ -51,3 +51,10 @@ How to Start
 * Step 4 : Split terminal
 
 * Step 5 : Start Server and Client using "npm start" command
+
+
+
+![user login](https://user-images.githubusercontent.com/105903006/209499660-7c038922-8d2b-48bb-83bc-40d2932960f4.png)
+![pdf gallery](https://user-images.githubusercontent.com/105903006/209499663-74e455dd-5889-4112-8d82-7359dafeb6cc.png)
+![user dashboard](https://user-images.githubusercontent.com/105903006/209499666-5461f2fe-6f7b-435c-acb3-38c4343dc4d5.png)
+![admin dshboard](https://user-images.githubusercontent.com/105903006/209499668-f365cd03-7767-48c7-8c2f-1460e4e20d56.png)
